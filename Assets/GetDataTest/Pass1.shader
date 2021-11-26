@@ -1,4 +1,4 @@
-Shader "Hidden/Pass1"
+Shader "Hidden/GetDataTest/Pass1"
 {
     SubShader
     {
@@ -17,7 +17,7 @@ Shader "Hidden/Pass1"
 
             float4 Fragment(float4 position : SV_Position) : SV_Target
             {
-                return frac(_Time.y * 30);
+                return frac(_Time.y * 16.47289);
             }
 
             ENDCG

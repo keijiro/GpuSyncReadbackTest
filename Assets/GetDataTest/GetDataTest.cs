@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-sealed class Test : MonoBehaviour
+sealed class GetDataTest : MonoBehaviour
 {
     [SerializeField] RawImage _ui1 = null;
     [SerializeField] RawImage _ui2 = null;

@@ -1,4 +1,4 @@
-Shader "Hidden/Pass2"
+Shader "Hidden/GetDataTest/Pass2"
 {
     SubShader
     {
