@@ -1,10 +1,10 @@
-#pragma kernel Main
+#pragma kernel Fetch
 
 Texture2D<float4> Input;
 RWStructuredBuffer<float4> Output;
 
 [numthreads(1, 1, 1)]
-void Main(uint3 id : SV_DispatchThreadID)
+void Fetch(uint3 id : SV_DispatchThreadID)
 {
     Output[0] = Input[uint2(0, 0)];
 }

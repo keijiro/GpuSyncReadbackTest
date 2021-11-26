@@ -1,4 +1,4 @@
-Shader "Hidden/GetDataTest/Pass1"
+Shader "Hidden/Fill"
 {
     SubShader
     {
@@ -10,6 +10,8 @@ Shader "Hidden/GetDataTest/Pass1"
             #pragma vertex Vertex
             #pragma fragment Fragment
 
+            float _Input;
+
             float4 Vertex(float4 position : POSITION) : SV_Position
             {
                 return UnityObjectToClipPos(position);
@@ -17,7 +19,7 @@ Shader "Hidden/GetDataTest/Pass1"
 
             float4 Fragment(float4 position : SV_Position) : SV_Target
             {
-                return frac(_Time.y * 16.47289);
+                return _Input;
             }
 
             ENDCG
