@@ -17,7 +17,8 @@ Shader "Hidden/Flicker"
 
             float4 Fragment(float4 position : SV_Position) : SV_Target
             {
-                return frac(_Time.y * 16.47289);
+                float g = frac(_Time.y * 16.47289);
+                return float4(g, g, g, 1);
             }
 
             ENDCG

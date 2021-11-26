@@ -19,7 +19,7 @@ Shader "Hidden/Fill"
 
             float4 Fragment(float4 position : SV_Position) : SV_Target
             {
-                return _Input;
+                return float4(_Input, _Input, _Input, 1);
             }
 
             ENDCG
